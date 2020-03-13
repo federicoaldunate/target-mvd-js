@@ -2,6 +2,7 @@ import React from 'react';
 import './MenuLeft.scss';
 import smilies from '../../assets/images/smilies.png';
 import menuIcon from '../../assets/icons/menu-icon.png';
+import { FormattedMessage } from 'react-intl';
 
 function MenuLeft() {
   return (
@@ -11,8 +12,8 @@ function MenuLeft() {
       </div>
       <img src={smilies} className="smiles" alt="smilies" />
       <h2>TARGET MVD</h2>
-      <h3>Find people near you & connect</h3>
-      <p className="intro-description">Create a  target  wherever on the map, specify your interest: Travel, Dating, Music, etc and start conecting with others who share your interest.</p>
+      <h3><FormattedMessage id="home.subtitle" /></h3>
+      <p className="intro-description"><FormattedMessage id="home.description" /></p>
     </div>
   );
 }
