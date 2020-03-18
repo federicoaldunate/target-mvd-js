@@ -1,12 +1,8 @@
 import React from 'react';
 import './AppAdvert.scss';
 
-function AppAdvert() {
-  return (
-    <div className="app-advert">
-    </div>
-  );
-}
-
+const AppAdvert = () => (
+  <div className="app-advert" />
+);
 
 export default AppAdvert;
